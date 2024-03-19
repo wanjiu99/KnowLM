@@ -135,7 +135,7 @@ def main(
             "output_scores": True,
             "max_new_tokens": max_new_tokens,
         }
-
+       print( "-------------------", generate_params)
         if stream_output:
             # Stream the reply 1 token at a time.
             # This is based on the trick of using 'stopping_criteria' to create an iterator,
