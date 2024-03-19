@@ -131,8 +131,8 @@ def main(
             model = LlamaForCausalLM.from_pretrained(
                 base_model,
                 load_in_8bit=load_8bit,
-                load_in_4bit=load_4bit,
                 torch_dtype=torch.float16,
+                load_in_4bit=load_4bit,
                 device_map=device_map,
             )
         # model = PeftModel.from_pretrained(
